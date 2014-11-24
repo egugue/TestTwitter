@@ -2,12 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.samuyu.testtwitter" >
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-
         <activity
             android:name=".activities.MyActivity"
             android:label="@string/app_name" >
@@ -17,26 +18,26 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".activities.OAuthActivity"
             android:label="@string/title_activity_oauth"
-            android:launchMode="singleTask"
-        >
+            android:launchMode="singleTask" >
             <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
 
-                <action android:name="android.intent.action.VIEW"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-                <category android:name="android.intent.category.BROWSABLE"/><!--WEBサイトのリンクから起動する-->
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" /> <!-- WEBサイトのリンクから起動する -->
 
                 <data
                     android:host="twitter"
-                    android:scheme="duane0728"/>
-
+                    android:scheme="duane0728" />
             </intent-filter>
         </activity>
-
+        <activity
+            android:name=".activities.TweetDetailActivity"
+            android:label="@string/title_activity_tweet_detail" >
+        </activity>
     </application>
-    <uses-permission android:name="android.permission.INTERNET" />
+
 
 </manifest>

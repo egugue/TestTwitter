@@ -5,4 +5,21 @@
         android:title="@string/action_settings"
         android:orderInCategory="100"
         android:showAsAction="never" />
+
+    <item android:id="@+id/write_tweet"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:showAsAction="always" />
+
+    <item android:id="@+id/no3"
+        android:title="hogehogeaaaaa"
+        android:showAsAction="never"/>
+
+    <item android:id="@+id/no1"
+        android:title="hogehoge"
+        android:orderInCategory="1000"
+        android:showAsAction="never"/>
+
+    <item android:id="@+id/no2"
+        android:title="hogehoge"
+        android:showAsAction="never"/>
 </menu>

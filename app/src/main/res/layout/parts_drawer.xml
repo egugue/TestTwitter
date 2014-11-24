@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="250dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="#fafafa"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- プロフィール情報 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/my_profile"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp" >
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/user_profile_icon"
+            android:src="@drawable/ic_launcher"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/nickname"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/user_profile_icon"
+            android:layout_toEndOf="@+id/user_profile_icon"
+            android:textSize="16sp"
+            android:textIsSelectable="false"
+            android:layout_marginBottom="3dp"
+            android:textColor="#ffffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/username"
+            android:layout_toEndOf="@+id/user_profile_icon"
+            android:layout_below="@+id/nickname"
+            android:layout_toRightOf="@+id/user_profile_icon"
+            android:layout_marginBottom="1dp"
+            android:textSize="12sp"
+            android:textColor="#ffffffff" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="タイムライン"
+        android:id="@+id/drawer_timeline"
+        android:textSize="23dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ツイートする"
+        android:id="@+id/drawer_write"
+        android:textSize="23sp" />
+
+
+</LinearLayout>
